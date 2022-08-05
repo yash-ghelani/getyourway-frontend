@@ -47,7 +47,8 @@ const MapComponent = ({flightOriginCode}) => {
 
     return (
         <Center>
-            <Flex position='relative' flexDirection='column' alignItems='center' h='100vh' w='100vw'>
+            {/* <Flex position='relative' flexDirection='column' alignItems='center' h='100vh' w='100vw'> */}
+            <Flex position='relative' flexDirection='column' alignItems='center' h='auto' w='auto'>
 
                 <ChakraProvider theme={theme}>
 
@@ -91,7 +92,8 @@ const MapComponent = ({flightOriginCode}) => {
                                 </GoogleMap>
                             </Box>
                         </>
-                        : <></>
+                        : <>
+                        </>
                     }
 
 
