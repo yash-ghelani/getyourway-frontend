@@ -73,7 +73,6 @@ const MapComponent = ({flightOriginCode}) => {
                                     <br/> Driving Distance: <strong>{distance}</strong> <br/> Driving Duration: <strong>{duration}</strong>
                                 </Text>
                             </HStack>
-                            <HStack>
                             <Box position='relative' left='8%' top='2%' h='100%' w='100%'>
                                 <GoogleMap
                                     center={center}
@@ -91,7 +90,6 @@ const MapComponent = ({flightOriginCode}) => {
                                     )}
                                 </GoogleMap>
                             </Box>
-                            </HStack>
                         </>
                         : <></>
                     }
