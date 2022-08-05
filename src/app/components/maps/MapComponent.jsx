@@ -45,9 +45,13 @@ const MapComponent = ({flightOriginCode}) => {
         setDuration(results.routes[0].legs[0].duration.text)
     }
 
+    let height = '10vh'
+    {distance !== '' ? height = '100vh' : height = '10vh'}
+ 
+
     return (
         <Center>
-            <Flex position='relative' flexDirection='column' alignItems='center' h='100vh' w='100vw'>
+            <Flex position='relative' flexDirection='column' alignItems='center' h={height} w='100vw'>
 
                 <ChakraProvider theme={theme}>
 
