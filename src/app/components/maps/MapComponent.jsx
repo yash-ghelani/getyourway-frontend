@@ -47,6 +47,7 @@ const MapComponent = ({flightOriginCode}) => {
 
     return (
         <Center>
+            {/* for changing size */}
             {/* <Flex position='relative' flexDirection='column' alignItems='center' h='100vh' w='100vw'> */}
             <Flex position='relative' flexDirection='column' alignItems='center' h='auto' w='auto'>
 
